@@ -1,0 +1,198 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilos adicionales para mejorar la legibilidad del texto en algunos elementos */
+h2, h3 {
+    margin-bottom: 10px;
+}
+
+/* Estilos para la sección de contacto */
+#contacto {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contacto label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#contacto input,
+#contacto textarea {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+#contacto button {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contacto button:hover {
+    background-color: #555;
+}
+
+
+
+
+
+/* Estilos para la página de agradecimiento */
+#gracias {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#gracias h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#gracias p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+
+/* Estilos para el enlace de volver en la página de agradecimiento */
+#gracias a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#gracias a:hover {
+    background-color: #555;
+}
+/* Estilos adicionales para dispositivos móviles */
+@media (max-width: 767px) {
+    #home img {
+        margin-bottom: 20px;
+    }
+
+    #productos #filtro-categorias {
+        flex-direction: column;
+    }
+
+    #productos #filtro-categorias button {
+        margin: 5px 0;
+    }
+
+    #contacto form {
+        max-width: 100%;
+    }
+}
+
+/* Estilos para la sección de comentarios en la página de detalles del producto */
+#comentarios {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+#comentarios h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+#comentarios .comentario {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#comentarios .comentario p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+#comentarios .comentario .nombre {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el formulario de comentarios */
+#comentarios form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#comentarios form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#comentarios form input,
+#comentarios form textarea {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+#comentarios form button {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#comentarios form button:hover {
+    background-color: #555;
+}
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+footer p {
+    margin: 0;
+    font-size: 1em;
+}

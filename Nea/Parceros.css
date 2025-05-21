@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Roboto, 'sans-serif';
+
+    
+}
+.debug {
+    border: 1px solid red;
+}
+
+main{
+    
+    overflow-x: hidden;
+    
+}
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+    width: 100vw;
+    align-self: center;
+    
+}
+
+
+header,.seccion-ofertas,.otras-opciones{
+    margin-bottom: 80px;
+}
+header {
+    background: rgb(161, 97, 182);
+    background: linear-gradient(90deg, rgb(196, 41, 170) 0%, rgba(169,15,144,1) 56%, rgba(12,26,81,1) 100%);
+    padding-top: 7px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    
+    
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 95px;
+    background-color: #EBEBEB;
+    margin: 0 auto;
+    
+    
+}
+
+header .logo-barra {
+    display: flex;
+    flex-direction: row;
+    justify-content:safe;
+    padding-left: 8%;
+    margin-top: 5px;
+
+}
+#logo img{
+    width:150px;
+    height:150px;
+    filter:brightness(1.1);
+    mix-blend-mode: multiply;
+    
+  }
+#logo img:hover{
+  
+      animation: bounce 1s ease-in-out infinite;
+  }
+  @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-5px);
+      } 
+  }
+  header .logo-barra .busqueda1{
+    display: flex;
+    flex-direction: row;
+
+margin-top: 40px;
+  }
+  header .logo-barra .busqueda1 input{
+    height: 50px;
+    width: 800px;
+  }
+
+  header .logo-barra .busqueda1 button {
+    height: 50px;
+width: 50px;
+
+  }
+  header .logo-barra .busqueda1 button svg{
+    cursor: pointer;
+  }
+  header .logo-barra .subscripcion-boton{
+margin: 50px;
+  }
+  header .logo-barra .subscripcion-boton .button{
+  display:flex;
+    justify-content: flex-end;
+    border-top: rgb(250, 250, 250);
+    border-top-style: groove;
+    border-top-width: 0.2px;
+    background-color:rgb(52, 163, 190);
+    padding: 15px 36px;
+    padding-top: 5px;
+}
+
+
+.header-a{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    
+}
+.space-btw {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: baseline;
+    gap: 4px;
+    margin-bottom: 0%;
+    padding-right: 10%;
+    padding-left: 9%;
+
+}
+
+.domicilio {
+    
+    margin-bottom: 11px;
+    color: #333333;
+    font-size: small;
+    font-weight: 600;
+}
+
+.elementos-header {
+    margin-bottom: 11px;
+    color: #33333399;
+    display: flex;
+    align-items: center;
+    font-size: small;
+    justify-content: space-between;
+    text-size-adjust: 22px;
+    gap: 15px;
+}
+.dropdown1 {
+    float: left;
+   
+
+}
+
+.dropdown1 a .dropbtn {
+    font-size: auto;
+  
+    outline: none;
+    color: #171515;
+    padding: 14px 16px;
+    margin: 0;
+}
+ a {
+    text-decoration: none;
+}
+
+ .dropdown1:hover .dropbtn {
+    background-color: rgb(221, 233, 88);
+}
+
+.dropdown-content {
+    display:none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown1:hover .dropdown-content {
+    display:flex;
+    flex-direction: column;
+}
+.sub-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.sub-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 100%;
+    top: 0;
+}
+
+.sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+}
+.CIM {
+    margin-bottom: 11px;
+    display: flex;
+    align-items: center;
+    font-size: small;
+    justify-content: space-between;
+    text-size-adjust: 22px;
+    gap: 15px;
+}
+.CIM a{
+    color: #171515;
+ text-decoration: none;
+cursor: pointer;
+}
+.ver-mas {
+    color: #3483FA;
+    font-size: smaller;
+}
+.secciones-header{
+    color: #666666;
+    font-size: 26px;
+    font-weight: 400;
+    margin-right: 7px;
+}
+
+
+.seccion-ofertas{
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    justify-content: space-evenly;
+    width: 1200px;
+    margin-bottom: 5%;
+}
+.seccion-ofertas-header{
+    display: flex;
+    justify-content:flex-start;
+    gap: 8px;
+    align-items: baseline;
+    margin-left: 20px;
+
+}
+ .seccion-general-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+  
+  
+}
+.card-ofertas{
+    display: flex;
+    flex-direction: column;
+    gap: 11.8px;
+    padding-bottom: 58px;
+    background-color: white;
+    width: 380px;
+
+}
+.card-ofertas-descripcion{
+padding:0px 0px 0px 15px;
+
+}
+.card-ofertas-precio{
+    color: #333333;
+    font-size: 23px;
+    font-weight:600;
+    padding-left: 16px;
+    
+}
+.card-ofertas-descuento{
+    color: #00A650;
+    font-size: 14px;
+    padding-left: 11.28px;
+
+}
+.envio-gratis{
+    color: #00A650;
+    font-size: 13px;
+    font-weight: bolder;
+    padding-left: 16px;
+}
+.otras-opciones{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40%;
+    background-color: rgb(251, 248, 248);
+    justify-content: center;
+   
+}
+.otras-opciones-section{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 260px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;  
+    background-color: #ffffff;
+    padding-left: 12%;
+
+}
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 17px;
+    gap: 7px;
+    padding-bottom: 15px;
+    padding-right: 500px;
+    border-bottom: rgb(255, 255, 255);
+    border-bottom-style: groove;
+    border: bottom width 0px;;
+    border-top: rgb(255, 255, 255);
+    border-top-style: groove;
+    border: top width 0px;;
+
+
+
+}
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    margin:10px 0px 0px 0px;
+          }
+          .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px; /* Ancho de cada icono */
+            height: 50px; /* Altura de cada icono */
+            margin: 0 10px; /* Espacio entre iconos */
+            font-size: 24px;
+            color: #333; /* Color normal de los iconos */
+            text-decoration: none;
+            border-radius: 50%; /* Hacer los iconos redondeados */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Efecto de transición */
+          }
+          
+          .social-icons a:hover {
+            color: white; /* Color al hacer hover sobre los iconos */
+          }
+          
+          /* Estilos para los iconos de cada red social */
+          .facebook {
+            background-color: #3b5998; /* Color de fondo de Facebook */
+          }
+          
+          .instagram {
+            background-color: #c13584; /* Color de fondo de Instagram */
+          }
+          
+          .twitter {
+            background-color: #1da1f2; /* Color de fondo de Twitter */
+          }
+          
+          .youtube {
+            background-color: #ff0000; /* Color de fondo de YouTube */
+          }
+          .producto {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    
+        .productos-seleccionados-container {
+            position: relative;
+        }
+        
+        .productos-seleccionados {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .productos-seleccionados-container:hover .productos-seleccionados {
+            display: block;
+        }
